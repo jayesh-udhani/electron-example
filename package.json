@@ -1,0 +1,18 @@
+{
+    "build": {
+        "appId": "xp.ndf.asia",
+        "icon": "images/batman.ico",
+        "asar": false
+    },
+    "scripts": {
+        "start": "electron .",
+        "dist": "build --x64"
+    },
+    "devDependencies": {
+        "electron-builder": "^20.15.1"
+    },
+    "dependencies": {
+        "electron-updater": "^2.21.10",
+        "yarn": "^1.7.0"
+    }
+}
