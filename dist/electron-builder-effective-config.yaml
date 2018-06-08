@@ -1,7 +1,16 @@
 directories:
   output: dist
   buildResources: build
-appId: xp.ndf.asia
+publish:
+  - provider: github
+    owner: jayesh-udhani
+    repo: electron-example
+appId: com.github.jayesh-udhani.electronexample
+mac:
+  category: your.app.category.type
+  target:
+    - zip
+    - dmg
 icon: images/batman.ico
 asar: false
-electronVersion: 1.8.2
+electronVersion: 2.0.2

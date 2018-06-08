@@ -7,14 +7,11 @@ Last name: <input type="text" id="lastname_id" name="LastName" ><br>
 <p>Click the "Submit" button and the form-data will be sent to another page".</p>
 <script type="text/javascript">
 function myFunction() {
-	const {BrowserWindow} = require('electron');
-	//let win = new BrowserWindow({backgroundColor: '#2e2c29'});
 	console.log(__dirname);
 if (typeof(Storage) !== "undefined") {
 	localStorage.setItem("firstname", document.getElementById("firstname_id").value);
 	localStorage.setItem("lastname", document.getElementById("lastname_id").value);
 	}
-	//window.location.assign("file:///C:/Users/ADMIN/Desktop/twoPageApp/app/redirect.html");
 	window.location.assign(`file://${__dirname}/redirect.html`);
 }
 </script>
