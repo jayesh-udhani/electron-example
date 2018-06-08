@@ -1,17 +1,39 @@
 {
+    "name": "electron-example",
+    "version": "0.0.0",
+    "main": "main.js",
+    "description": "electron example project",
+    "author": "Jayesh Udhani",
     "build": {
-        "appId": "xp.ndf.asia",
+        "publish": [
+            {
+                "provider": "github",
+                "owner": "jayesh-udhani",
+                "repo": "electron-example"
+            }
+        ],
+        "appId": "com.github.jayesh-udhani.electronexample",
+        "mac": {
+            "category": "your.app.category.type",
+            "target": [
+                "zip",
+                "dmg"
+            ]
+        },
         "icon": "images/batman.ico",
         "asar": false
     },
     "scripts": {
         "start": "electron .",
-        "dist": "build --x64"
+        "dist": "build --x64",
+        "publish": "build --win -p always"
     },
     "devDependencies": {
+        "electron": "^2.0.2",
         "electron-builder": "^20.15.1"
     },
     "dependencies": {
+        "electron-log": "^2.2.14",
         "electron-updater": "^2.21.10",
         "yarn": "^1.7.0"
     }
