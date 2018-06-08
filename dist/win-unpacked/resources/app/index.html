@@ -5,7 +5,20 @@ First name: <input type="text" id="firstname_id" name="FirstName" ><br>
 Last name: <input type="text" id="lastname_id" name="LastName" ><br>
 <button onclick="myFunction()">Submit</button>
 <p>Click the "Submit" button and the form-data will be sent to another page".</p>
+Current version: <span id="version">vX.Y.Z</span>
+  <div id="messages"></div>
 <script type="text/javascript">
+let version = window.location.hash.substring(1);
+document.getElementById('version').innerText = version;
+
+// Listen for messages
+const {ipcRenderer} = require('electron');
+ipcRenderer.on('message', function(event, text) {
+  var container = document.getElementById('messages');
+  var message = document.createElement('div');
+  message.innerHTML = text;
+  container.appendChild(message);
+})
 function myFunction() {
 	console.log(__dirname);
 if (typeof(Storage) !== "undefined") {

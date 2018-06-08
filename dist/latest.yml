@@ -1,9 +1,9 @@
-version: 0.1.0
+version: 0.1.1
 files:
-  - url: your-app-setup-0.1.0.exe
-    sha512: 2e0rkvx7uW3/FpxXWlzoaf6EVm+1aEHBDJFSyXH6CXtnEIMrX+NBVIPzyRmt3rbxUokOFcWfsQiYpX0TPo9I4A==
-    size: 35788176
-path: your-app-setup-0.1.0.exe
-sha512: 2e0rkvx7uW3/FpxXWlzoaf6EVm+1aEHBDJFSyXH6CXtnEIMrX+NBVIPzyRmt3rbxUokOFcWfsQiYpX0TPo9I4A==
-sha2: 937e2bc9edf44a9ce8e7fc9f4ad054dae6e9c0245c4760a90eb8748e44c2a0f4
-releaseDate: '2018-06-08T07:09:32.711Z'
+  - url: your-app-setup-0.1.1.exe
+    sha512: g77Mn6O3/VmpW3FlahRSuBXY/d00H5RgaDQNR2QA55eWFm005YYSNxBmw6hxUcYeCnZUoOCKWiMdoTyWiCEOWg==
+    size: 35789160
+path: your-app-setup-0.1.1.exe
+sha512: g77Mn6O3/VmpW3FlahRSuBXY/d00H5RgaDQNR2QA55eWFm005YYSNxBmw6hxUcYeCnZUoOCKWiMdoTyWiCEOWg==
+sha2: 9541db556d3077c76eac587fa4750a0e620f112120d44fb31f76d59ec88ebabd
+releaseDate: '2018-06-08T09:18:23.284Z'

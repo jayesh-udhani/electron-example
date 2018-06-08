@@ -14,6 +14,7 @@ const version = app.getVersion();
 // This logging setup is not required for auto-updates to work,
 // but it sure makes debugging easier :)
 //-------------------------------------------------------------------
+log.info("LOLOLOLOL");
 autoUpdater.logger = log;
 autoUpdater.logger.transports.file.level = 'info';
 log.info('App starting...');
@@ -60,6 +61,7 @@ function sendStatusToWindow(text) {
   win.webContents.send('message', text);
 }
 function createDefaultWindow() {
+  console.log(version);
   win = new BrowserWindow();
   win.webContents.openDevTools();
   win.on('closed', () => {
